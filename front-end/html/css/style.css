@@ -1,0 +1,149 @@
+/* RESET E DEFINIÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Troquei o amarelo por um degradê de cinza espacial para preto */
+    background: radial-gradient(circle, #2c2c2c 0%, #050505 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* HEADER ELEGANTE */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* Cor Prata Metálico */
+    color: #e0e0e0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.introducao h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.introducao p {
+    color: #aaaaaa;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+/* GALERIA DE JOGADORES */
+.galeria-jogadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* CARD DO JOGADOR */
+.card-jogador {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 300px;
+    cursor: pointer;
+}
+
+.card-jogador:hover {
+    transform: translateY(-15px) scale(1.03);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.nome-jogador {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* IMAGENS - AJUSTE PARA NÃO CORTAR ROSTO */
+.card-jogador img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    /* Posiciona a imagem no topo para focar no rosto */
+    object-position: top center; 
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card-jogador:hover img {
+    filter: brightness(1.1);
+}
+
+/* BOTÃO DE AÇÃO */
+.btn-voltar {
+    margin-top: 40px;
+    padding: 12px 40px;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn-voltar:hover {
+    background: #cccccc;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
