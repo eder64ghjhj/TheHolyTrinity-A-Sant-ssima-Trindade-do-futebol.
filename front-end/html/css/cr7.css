@@ -1,0 +1,182 @@
+/* 1. RESET E DEFINIÇÕES GERAIS (ESTILO DARK UNITED)
+   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #0c0c0c; /* Fundo preto profundo */
+    color: #e0e0e0; 
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 2. HEADER E NAVEGAÇÃO
+    */
+header {
+    /* Gradiente Manchester: Vermelho Escuro para o Preto */
+    background: linear-gradient(135deg, #8a0606 0%, #000000 100%); 
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-bottom: 3px solid #c70101;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.tagline {
+    font-weight: bold;
+    color: #c70101; /* Vermelho vibrante na frase */
+    text-transform: uppercase;
+}
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 0 20px;
+    display: block;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+    color: #c70101; /* Vermelho Manchester no hover */
+    background-color: #111;
+}
+
+/* ============================================================
+   3. CONTEÚDO PRINCIPAL
+   ============================================================ */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    border-left: 5px solid #c70101;
+    padding-left: 15px;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================================
+   4. GALERIA DARK
+   ============================================================ */
+.grid-fotos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-foto {
+    background: #161616; /* Fundo dos cards escuro */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    border: 1px solid #222;
+    flex: 1 1 300px;
+    max-width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-foto:hover {
+    border-color: #c70101; /* Brilha vermelho no card */
+}
+
+.card-foto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    filter: grayscale(20%);
+    transition: 0.4s;
+}
+
+.card-foto img:hover {
+    transform: scale(1.02);
+    filter: grayscale(0%);
+}
+
+.card-foto p {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* ============================================================
+   5. TABELA DE ESTATÍSTICAS (VERSÃO DARK)
+   ============================================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    border: 1px solid #222;
+}
+
+th {
+    background-color: #c70101; /* Vermelho United nas tabelas */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #222;
+    color: #ccc;
+}
+
+tr:hover {
+    background-color: #1a1a1a;
+}
+
+/* ============================================================
+   6. RODAPÉ
+   ============================================================ */
+footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    font-size: 0.8rem;
+    color: #555;
+    background-color: #080808;
+    margin-top: 4rem;
+    border-top: 1px solid #111;
+}
